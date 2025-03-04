@@ -1,0 +1,366 @@
+@font-face {
+    font-family: clashDisplay;
+    src: url(/assets/font/ClashDisplay-Variable.ttf);
+}
+
+*{
+    font-family: clashDisplay;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navigation bar stlye start*/
+.navbar{
+    box-shadow: 1px 1px 15px #938e8e;
+}
+
+.navbar-nav a:hover {
+    color: #4572d5;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #000;
+}
+
+.navbar-nav .nav-link.active {
+    color: #4572d5;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn-brand {
+    background-color: #4572d5;
+    color: #fff;
+    border-radius: 0;
+    &:hover{
+        background-color: #6885c4;
+        color: #fff;
+    }
+}
+
+.btn-light{
+    border-radius: 0;
+}
+
+/* navigation bar stlye end*/
+
+
+/* hero section stlye start*/
+
+#hero {
+    background: linear-gradient(rgba(127, 106, 220, 0.507), rgba(118, 135, 221, 0.438)) ,url(/assets/images/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* hero section stlye end*/
+
+/* about section start here */
+.section-padding {
+    margin-top: 3rem;
+}
+
+
+.theme-shadow {
+    box-shadow: 1px 1px 15px #938e8e;
+}
+
+.image-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* work in progress */
+.image-zoom:hover a{
+    /* border: 1px solid red; */
+    transform: translateY(50%);
+    transition: all 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    background-color: #4572d5;
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* about section end here */
+
+
+/* iconsbox start */
+.iconbox {
+    width: 70px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(244, 233, 233);
+    color: #4572d5;
+    font-size: 34px;
+    flex: none;
+    text-decoration: none;
+}
+/* iconsbox end */
+
+
+/* services section start here */
+
+.service {
+   position: relative; 
+   overflow: hidden;
+   z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #4572d5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: width 0.5s, height 0.5s;
+}
+
+.service:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: #4572d5;
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: #fff;
+}
+
+.service:hover .iconbox {
+    background-color: #c1b6b6;
+    color: #fff;
+}
+
+/* services section end here */
+
+
+/* counter section start here */
+
+#counter {
+    background: linear-gradient(rgba(127, 106, 220, 0.8), rgba(118, 135, 221, 0.8)) ,url(/assets/images/counter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* counter section end here */
+
+/* portfolio start */
+.portfolio-item .iconbox {
+    background-color: #5d86df;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.portfolio-item:hover .iconbox{
+    opacity: 1;
+    top: 50%;
+}
+/* portfolio end */
+
+
+/* review start */
+
+.review small {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5d86df;
+}
+
+.review-head::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    /* bottom: 5px; */
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+/* review end */
+
+/* get in touch start */
+#get-in-touch {
+    background: linear-gradient(rgba(127, 106, 220, 0.8), rgba(118, 135, 221, 0.8)) ,url(/assets/images/counter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.get-in-touch-form {
+    background-color: #fff;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    margin-bottom: -8rem;
+}
+
+.get-in-touch-form .row{
+    margin-bottom: 1rem;
+}
+
+.get-in-touch-form form {
+    width: 90%;
+}
+
+.section-title {
+    margin-top: 4rem;
+}
+
+.message-area {
+    height: 8rem;
+    min-height: 8rem;
+    max-height: 8rem;
+}
+
+.form-control:focus{
+    /* border: 1px solid red; */
+    border: 1px solid #4572d5;
+    box-shadow: none;
+}
+
+/* get in touch end */
+
+/* news section start here */
+#news-article {
+    margin-top: 13rem;
+}
+
+.news-link {
+    text-decoration: none;
+}
+/* news section end here */
+
+/* footer section start here */
+#footer {
+   background-color: #212529;
+   color: #fff;
+   /* height: 30rem; */
+   padding-bottom: 2rem;
+}
+
+
+.footer-content {
+    padding: 5rem;
+    padding-left: 0px;
+}
+
+.line1 {
+    width: 50px;
+    height: 4px;
+    background-color: #4572d5;
+    margin: 16px 0px 24px 0px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social a {
+    text-decoration: none;
+    margin: 0.1rem;
+    font-size: 18px;
+    color: #e9e0e0;
+    background-color: #807676;
+    border-radius: 100px;
+    padding: 8px 12px;
+    &:hover {
+        background-color: #5d86df;
+    }
+}
+
+
+.list-decoration {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.list-decoration a{
+    text-decoration: none;
+    color: #e9e0e0;
+    &:hover{
+        color: #5d86df;
+    }
+}
+/* footer section end here */
+
+
+/* media query start */
+@media (max-width: 576px) {
+    .get-in-touch-form .c-name{
+        margin-bottom: 15px;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
+
+    .footer-lst p{
+        text-align: center !important;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social{
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .custom-space {
+        margin-bottom: 30px;
+    }
+
+    .list-decoration {
+        width: 300px;
+    }
+
+    .image-zoom-wrapper img{
+        margin-bottom: 10px;
+    }
+
+}
+/* meida query end */
